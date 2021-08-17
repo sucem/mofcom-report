@@ -4,7 +4,7 @@
 	-- 现所有人姓名
 	y.SYR SYR, 
 	-- 是否企业
-	CASE WHEN y.SFZMMC IN ('N', 'B') THEN '是' ELSE '否' END SYR_IS_COMPANY , 
+	CASE WHEN y.SFZMMC IN ('N', 'B', 'P') THEN '是' ELSE '否' END SYR_IS_COMPANY , 
 	-- 是否有同一社会信用代码
 	CASE WHEN y.SFZMMC = 'N' THEN '是' ELSE '否' END SYR_HAS_N ,
 	-- 国籍
