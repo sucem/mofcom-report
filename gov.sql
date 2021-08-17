@@ -34,7 +34,7 @@
     -- 卖家姓名
     y.YSYR YSRY ,
     -- 卖家是否是公司 
-    CASE WHEN y.YSFZMMC IN ('N', 'B') THEN '是' ELSE '否' END YSYR_IS_COMPANY , 
+    CASE WHEN y.YSFZMMC IN ('N', 'B', 'P') THEN '是' ELSE '否' END YSYR_IS_COMPANY , 
     -- 卖家是否统一信用代码
    	CASE WHEN y.YSFZMMC = 'N' THEN '是' ELSE '否' END YSYR_HAS_N ,
    	-- 卖家国籍
